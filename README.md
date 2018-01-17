@@ -1,20 +1,58 @@
-# E-commerce-site-using-Node.js
+# E-commerce Backend with Node.js
 
 
-This is basic Setup of Ecommerce Site using JADE as (Templating engine) with instant search feature (using elsatic search)
+## Requirements
 
-To use this Kindly follow these steps - 
+To run We Donate you'll need:
 
-1  Install all the ###node module (using npm install).
+- [Node.js](https://nodejs.org/) v6+.
+- [npm](https://www.npmjs.com/) v5+.
 
-2  Actually I have setup my own MongoDB database so you can setup your own MongoDB database(depends upon your projects).And  don't forget to 
-   edit the secret file (which is in Config folder) accordingly.
+## Usage
 
-3  Install elastic search depend upon your OS.
+### Getting started
 
-4 And Don't forget to start elastic search before running node server . 
+You will need to fork the project and clone it locally, then go to `We-Donate` folder.
 
-5  And i have used Facker.js to get the fake data but you can directly include your data according to your need and change the API file in API(folder).
+```sh
+$ git clone git@github.com:YOUR_USERNAME/E-commerce.git
+$ cd E-commerce
+```
+
+### Installation
+
+Install Elastic search and start its server on port 9200 (as defualt port for elastic search)
+
+Install all the dependencies
+
+```sh
+$ npm install
+```
+
+### Adding Secret Keys 
+
+```sh
+database: 'Your Database Link' // Use MongoDB 
+port: "YOUR PORT TO START NODE SERVER"
+secretKey: "Your secret key" // For authtentication 
+```
 
 
-  
+### For running the server 
+
+```sh
+$ npm start
+```
+
+You can use postman to check the API endpoints.
+
+
+## Contribute
+
+Feel free to raise an issue about a bug or new feature you would like to see in this project.
+ 
+If you are willing to do some work, we will be glad to accept your PR.
+
+## License
+
+This project is [Licensed](LICENSE) under the MIT License (MIT).
